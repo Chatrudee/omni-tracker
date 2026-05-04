@@ -4,4 +4,5 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 COPY . /app/
-CMD ["gunicorn", "core.wsgi", "--bind", "0.0.0.0:8080", "--log-file", "-"]
+EXPOSE 8000
+CMD ["sh", "-c", "python manage.py collectstatic --noinput && python manage.py migrate && gunicorn core.wsgi --bind 0.0.0.0:${PORT:-8000} --log-file -"]
