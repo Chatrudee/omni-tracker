@@ -212,6 +212,7 @@ Tests cover:
 
 ---
 
-## 👩‍💻 Author
+## 🔗 Live Demo
+- API: https://omni-tracker-production.up.railway.app/api/weather/
+- Dashboard: https://omni-tracker-qe9ub9ach-chatrudees-projects.vercel.app
 
-**Chatrudee** — [GitHub](https://github.com/Chatrudee)
