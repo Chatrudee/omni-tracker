@@ -119,6 +119,5 @@ def start_bot():
         schedule.run_pending()
         time.sleep(1)
 
-
-# จุด entry point
-start_bot()
+if __name__ == "__main__":
+    start_bot()
