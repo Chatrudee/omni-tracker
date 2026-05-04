@@ -5,7 +5,7 @@ from .serializers import WeatherSerializer, CurrencySerializer
 
 class StandardPagination(PageNumberPagination):
     """
-    ✅ เพิ่ม Pagination — ป้องกัน return ข้อมูลหมื่นแถวพร้อมกัน
+    เพิ่ม Pagination — ป้องกัน return ข้อมูลหมื่นแถวพร้อมกัน
     ใช้งาน: GET /api/weather/?page=2
     """
     page_size            = 20    # แสดง 20 record ต่อหน้า
