@@ -1,10 +1,5 @@
 from django.db import models
 
-
-# ============================================================
-# 🌤️  WEATHER LOG MODEL
-# ============================================================
-
 class WeatherLog(models.Model):
     city        = models.CharField(max_length=50)
     temperature = models.FloatField()
