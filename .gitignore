@@ -2,3 +2,4 @@ __pycache__/
 *.py[cod]
 postgres_data/
 .env
+db.sqlite3
