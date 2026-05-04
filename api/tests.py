@@ -24,4 +24,4 @@ class WeatherAPITest(APITestCase):
     def test_weather_returns_list(self):
         WeatherLog.objects.create(city="Bangkok", temperature=33.0)
         response = self.client.get('/api/weather/')
-        self.assertEqual(len(response.data), 1)
+        self.assertEqual(len(response.data['results']), 1)
